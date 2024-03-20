@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  background-color: blanchedalmond;
+  padding: 60px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  text-wrap: wrap;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.word-count-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

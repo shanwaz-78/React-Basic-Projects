@@ -1,0 +1,13 @@
+.textarea {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  text-wrap: wrap;
+}
+
+.textarea::placeholder {
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
