@@ -1,0 +1,29 @@
+.CocktailContainer {
+  padding: 20px;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #fff;
+}

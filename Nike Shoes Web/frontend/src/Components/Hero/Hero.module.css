@@ -1,0 +1,56 @@
+body {
+  overflow-y: hidden;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 300px;
+}
+
+.HeroContent p{
+  text-wrap: wrap;
+  font-weight: 700;
+  
+}
+
+.Hero h3 {
+  font-weight: 900;
+  font-size: 90px;
+  text-transform: uppercase;
+}
+
+.Hero p {
+  font-weight: 600;
+  color: grey;
+}
+
+.HeroButton {
+  display: flex;
+  gap: 40px;
+}
+
+.SecondaryBtn{
+  background: transparent;
+  color: #0f0f0f;
+  border: 1px solid green;
+}
+
+.Shopping {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.BrandImages{
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.HeroImage img{
+  width: 450px;
+  mix-blend-mode: color-dodge;
+}

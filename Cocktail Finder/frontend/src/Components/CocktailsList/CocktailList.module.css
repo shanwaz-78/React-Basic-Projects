@@ -1,0 +1,24 @@
+.drinksWrapper {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(19, 17, 17, 0.4) 0px 4px 8px;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.drinksWrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}

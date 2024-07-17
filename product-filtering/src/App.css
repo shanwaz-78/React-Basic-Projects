@@ -1,0 +1,35 @@
+body {
+  background-color: #1f2937;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.SideBar {
+  width: 250px;
+  background-color: #2d3748;
+  padding: 16px;
+}
+
+.ProductContainer {
+  flex: 1;
+  padding: 16px;
+}
+
+.ProductGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}

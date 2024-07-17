@@ -21,7 +21,7 @@ function Feed() {
 
   useEffect(() => {
     getVideos();
-  }, [searchTerm]);
+  }, [searchTerm, getVideos]);
 
   return (
     <Box sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>

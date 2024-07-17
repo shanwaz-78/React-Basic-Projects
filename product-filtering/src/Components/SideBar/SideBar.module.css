@@ -1,0 +1,69 @@
+aside {
+  max-width: calc(500px - 120px);
+  max-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22px;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.SideBar {
+  width: 250px;
+  background-color: #2d3748;
+  padding: 16px;
+}
+
+aside .heading {
+  position: relative;
+  left: -30px;
+}
+
+.Categories {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Category {
+  display: flex;
+  gap: 10px;
+}
+
+.Category label,
+input {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  aside {
+    max-width: 250px;
+    font-size: 20px;
+  }
+
+  aside .heading {  
+    text-align: center;
+  }
+
+  .Category {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  aside {
+    padding: 10px;
+  }
+
+  .Category {
+    gap: 5px;
+  }
+
+  .Category label {
+    font-size: 16px;
+  }
+}

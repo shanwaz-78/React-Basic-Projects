@@ -1,0 +1,64 @@
+header {
+  height: auto;
+  background-color: #111827;
+  padding: 12px 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.InputWrapper {
+  display: flex;
+  background-color: #374151;
+  padding: 10px 10px;
+  color: #fff;
+  gap: 20px;
+  border-radius: 50px;
+  max-width: 20%;
+  margin-left: 30px;
+  flex: 1;
+}
+
+.InputWrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  cursor: default;
+}
+
+.CartIcon {
+  margin-right: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .InputWrapper {
+    max-width: 250px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .CartIcon {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .InputWrapper {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}

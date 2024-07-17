@@ -16,7 +16,9 @@ function ChannelDetails() {
   const fetchUserChannel = useCallback(async () => {
     try {
       setLoading(true);
-      const channelResponse = await fetchData(`channels?part=snippet&id=${id}&maxResults=50`);
+      const channelResponse = await fetchData(
+        `channels?part=snippet&id=${id}&maxResults=50`
+      );
       setChannelDetails(channelResponse?.items[0]);
 
       const videosResponse = await fetchData(
@@ -32,7 +34,6 @@ function ChannelDetails() {
 
   useEffect(() => {
     fetchUserChannel();
-    console.log(channelDetails);
   }, [fetchUserChannel]);
 
   return (
@@ -46,11 +47,10 @@ function ChannelDetails() {
             zIndex: 10,
           }}
         />
-        
+
         {!loading && (
           <ChannelCard channelDetails={channelDetails} marginTop="-80px" />
         )}
-
       </Box>
       <Box display="flex" p="2px">
         <Box sx={{ mr: { sm: "100px" } }}>

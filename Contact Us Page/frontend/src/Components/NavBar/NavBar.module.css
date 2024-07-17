@@ -1,0 +1,28 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  height: 90px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 500;
+  gap: 50px;
+}
+
+ul li {
+  font-size: 18px;
+}
+
+ul li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}

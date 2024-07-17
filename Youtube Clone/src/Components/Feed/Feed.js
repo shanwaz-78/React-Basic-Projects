@@ -14,7 +14,7 @@ function Feed() {
     setLoading(true);
     try {
       const { items } = await fetchVideos(
-        `search?part=snippet&q=${category}&maxResults=20`
+        `search?part=snippet&q=${category}&maxResults=50`
       );
       setVideos(items);
     } catch (error) {

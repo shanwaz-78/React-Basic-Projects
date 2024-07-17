@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.topBtn {
+  display: flex;
+  gap: 30px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formController {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position:relative;
+}
+
+.formController label{
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.formController input{
+  height: 40px;
+  padding: 0 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

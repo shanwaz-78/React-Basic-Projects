@@ -6,7 +6,7 @@ import Navbar from "./Components/NavBar/Navbar";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Youtube-Clone-v2">
       <Box>
         <Navbar />
         <AppRoutes />
