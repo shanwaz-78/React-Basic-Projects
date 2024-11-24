@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is simple weather app with offline capabilities"
+    />
+    <title>Weather App | PWA Web App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // if ("serviceWorker" in navigator) {
+      //   window.addEventListener("load", async () => {
+      //     try {
+      //       const { scope } = await navigator.serviceWorker.register(
+      //         "./serviceWorker.js"
+      //       );
+      //       console.log(
+      //         "Service Worker registered successfully with scope: ",
+      //         scope
+      //       );
+      //     } catch (error) {
+      //       if (error.message.includes("Failed to fetch")) {
+      //         console.error(
+      //           "Service worker registration failed due to network issues. Please check your connection."
+      //         );
+      //       } else if (error.message.includes("not found")) {
+      //         console.error(
+      //           "Service worker file not found. Ensure './serviceWorker.js' exists and is properly linked."
+      //         );
+      //       } else {
+      //         console.error(
+      //           "Service worker registration failed: ",
+      //           error.message
+      //         );
+      //       }
+      //     }
+      //   });
+      // } else {
+      //   console.warn("Service workers are not supported in this browser.");
+      // }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

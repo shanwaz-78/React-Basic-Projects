@@ -1,0 +1,111 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0e0e0e;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 520px;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.heading_text {
+  text-align: center;
+  color: #333;
+}
+
+.heading_one {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.heading_two {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.total_amount_card {
+  width: 100%;
+  background-color: #d6ff58;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.card_text {
+  color: #333;
+}
+
+.total_amount_heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.total_amount_para {
+  font-size: 14px;
+  color: #4b4b4b;
+  margin-top: 5px;
+}
+
+.input_area {
+  margin-top: 2rem;
+}
+
+.input_field {
+  margin-bottom: 1.5rem;
+}
+
+.input_field .MuiTextField-root {
+  width: 100%;
+}
+
+.button_collection {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_one {
+  background-color: #1f1f1f !important;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn_two {
+  border-color: #1f1f1f !important;
+  color: #1f1f1f !important;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .total_amount_heading {
+    font-size: 28px;
+  }
+
+  .btn_one,
+  .btn_two {
+    width: 100%;
+  }
+
+  .button_collection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

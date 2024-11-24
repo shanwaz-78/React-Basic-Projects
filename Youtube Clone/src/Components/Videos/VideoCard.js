@@ -16,13 +16,13 @@ function VideoCard({
   },
 }) {
   return (
-    <Card sx={{ width: { md: "330px", xs: "100%", justifyContent : 'center' } }}>
+    <Card sx={{ width: { md: "330px", xs: "100%", justifyContent: "center" } }}>
       <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          loading='lazy'
-          decode='async'
+          loading="lazy"
+          decode="async"
           sx={{ width: 350, height: 180 }}
         />
       </Link>
@@ -42,7 +42,7 @@ function VideoCard({
         >
           <Typography variant="subtitle2" color="grey" fontWeight="bold">
             {snippet?.channelTitle || demoChannelTitle}
-            
+
             <CheckCircle
               sx={{
                 fontSize: 20,

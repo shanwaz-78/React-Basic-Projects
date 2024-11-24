@@ -9,9 +9,11 @@ function Feed() {
   const { searchTerm } = useParams();
 
   const getVideos = useCallback(async () => {
+    if (!searchTerm) return;
+
     try {
       const { items } = await fetchVideos(
-        `search?part=snippet&q=${searchTerm}&maxResults=30`
+        `search?part=snippet&q=${encodeURIComponent(searchTerm)}&maxResults=30`
       );
       setVideos(items);
     } catch (error) {
@@ -28,11 +30,11 @@ function Feed() {
       <Typography
         variant="h4"
         fontWeight="bold"
-        mt='10px'
+        mt="10px"
         sx={{ color: "#fff", textAlign: { md: "start", xs: "center" } }}
         paddingLeft={2}
       >
-        Search Results For:{' '}
+        Search Results For:{" "}
         <span
           style={{
             color: "red",

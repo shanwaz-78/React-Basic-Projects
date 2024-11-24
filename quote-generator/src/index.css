@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: url("./assets/city.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100%;
+}
