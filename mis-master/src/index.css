@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+/* Navbar Styles */
+.wrapper nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fffcfc;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+  color: #10b981;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f0f0f;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #10b981;
+  }
+}
+
+/* Navbar mobile responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Search Box Styles */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.input-wrapper input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  width: 80%;
+  transition: border-color 0.3s ease;
+  &:focus {
+    border-color: #10b981;
+  }
+}
+
+.input-wrapper button {
+  background-color: #10b981;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #0f9f6b;
+  }
+}
+
+/* drinks */
+.drinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.drink-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.drink-item {
+  width: 200px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.drink-item:hover {
+  transform: scale(1.05);
+}
+
+.drink-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.drink-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #213547;
+}

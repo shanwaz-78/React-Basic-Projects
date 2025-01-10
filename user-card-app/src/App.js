@@ -7,6 +7,6 @@ const App = () => {
       <User />
     </div>
   );
-};
+};    
 
 export default App;
