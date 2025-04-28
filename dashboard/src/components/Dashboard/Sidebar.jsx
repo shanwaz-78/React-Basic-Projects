@@ -5,7 +5,7 @@ const Sidebar = () => {
     <div className="w-64 h-full bg-blue-800 text-white">
       <div className="p-4 text-lg font-bold">App Name</div>
       <nav>
-        <a href="#" className="block p-4 hover:bg-blue-600">
+        <a href="#" className="block p-4 hover:bg-blue-600 color-white">
           Dashboard
         </a>
         <a href="#" className="block p-4 hover:bg-blue-600">
